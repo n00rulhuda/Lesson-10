@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced selectors </title>
+        <style>
+            input[type="text"]
+            {
+                color:aquamarine;
+                border: 2px solid pink;
+            }
+            input[type="password"]
+            {
+                border:3px solid yellowgreen;
+            }
+            ul>li{
+                color: crimson;
+            }
+            h2+p{
+                color: cyan;
+            }
+            a:hover{
+                color: cornflowerblue;
+            }
+            div:not(.div2){
+                border: 2px dotted blueviolet;
+            }
+             li:nth-child(2){
+                border: 2px dotted pink;
+                background-color: pink;
+             }
+             li::after{
+                content:"🍩";
+             }
+             li:nth-child(3)::before{
+                content: "🍦";
+             }
+             #p1::first-letter{
+                font-size:35px;
+             }
+        </style>
+    </head>
+    <body>
+        <h1> Advanced selector </h1>
+        <input type="text" placeholder="username"><br>
+        <input type="password" placeholder="password">
+        <ul>
+            <li>Chocolate</li>
+            <li>Donut</li>
+            <li>Ice cream</li>
+        </ul>
+        <h2>Climate </h2>
+        <p id="p1"> The climate of pakistan keeps on varying.</p>
+        <p>I like the climate of pakistan.</p>
+        <a href="#">Click me</a>
+        <div class="div1">
+            This is first division
+        </div>
+        <div class="div2">
+            This is second division.
+        </div>
+
+    </body>
+</html>
